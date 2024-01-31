@@ -1,0 +1,54 @@
+body {
+	margin: 0;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navigation-grocery {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #344cac;
+}
+
+.logo {
+	width: 70px;
+	height: 70px;
+	align-items: center;
+	justify-content: center;
+	margin-left: 20px;
+}
+
+.navigation-items {
+	list-style-type: none;
+}
+
+.navigation-items li {
+	display: inline;
+	margin-right: 15px;
+}
+
+.navigation-items li a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+}
+
+header {
+	text-align: center;
+	padding: 10px;
+	background-color: rgb(219, 220, 223);
+}
+
+.slider-container {
+	width: 100%;
+	overflow: hidden;
+}
+
+.slide {
+	display: none;
+}
+
+.slide img {
+	width: 850px;
+	height: 400px;
+}
