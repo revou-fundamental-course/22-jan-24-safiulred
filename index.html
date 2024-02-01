@@ -3,55 +3,134 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Grocery</title>
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
-		<nav class="navigation-grocery">
-			<img class="logo" src="assets/logo.png" alt="LOGO" />
-			<div class="navigation-items">
+		<header>
+			<h1 class="brand">Grocery</h1>
+			<ul>
 				<li>
-					<a href="#Home">Home</a>
+					<a href="#">Home</a>
 				</li>
 				<li>
-					<a href="#Product">Out Product</a>
+					<a href="#">Out Package</a>
 				</li>
 				<li>
-					<a href="#contactus">Contact Us</a>
+					<a href="#">Contact Us</a>
 				</li>
-			</div>
-		</nav>
-		<header id="Home">
-			<div class="slider-container">
-				<div class="slide" id="slide1">
-					<img src="assets/banner1.jpeg" alt="banner1-header" />
-				</div>
-				<div class="slide" id="slide2">
-					<img src="assets/banner2.jpeg" alt="banner1-header" />
-				</div>
-				<div class="slide" id="slide3">
-					<img src="assets/banner3.jpg" alt="banner1-header" />
-				</div>
-			</div>
-			<h1>Hello Welcome to E Grocery Site</h1>
-			<h4>this is pratice</h4>
+			</ul>
 		</header>
 
-		<section id="Product">
-			<div class="item">
-				<div class="img"></div>
-				<p>Keterangan Produk</p>
+		<section class="main">
+			<!-- Content -->
+			<div class="content box">
+				<h2>Top Rated E-Groceries Shop in Indonesian</h2>
+				<p>Every Day with best ingredients</p>
+				<div class="slide-container">
+					<div class="slide" id="slide1">
+						<img src="assets/banner1.jpeg" alt="banner1-header" />
+					</div>
+					<div class="slide" id="slide2">
+						<img src="assets/banner2.jpeg" alt="banner1-header" />
+					</div>
+					<div class="slide" id="slide3">
+						<img src="assets/banner3.png" alt="banner1-header" />
+					</div>
+				</div>
+
+				<div class="author">
+					<p class="quote">"Setiap hari beli sayur buah yang fresh disini"</p>
+
+					<div class="list-item">
+						<img
+							class="avatar"
+							src="https://mui.com/static/images/avatar/1.jpg"
+						/>
+						<div class="list-item-content">
+							<div class="name">John Doe</div>
+							<div class="description">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="package">
+					<h2>
+						Use this space to provide users with more information about your
+						offer. Consider it a follow-up to your headline and explain the
+						benefits of your service or product
+					</h2>
+
+					<div class="container">
+						<div class="item">
+							<div class="circle">1</div>
+							<div class="text">
+								Your first feature, written in the form of a benefit statement.
+							</div>
+						</div>
+						<div class="item">
+							<div class="circle">2</div>
+							<div class="text">
+								Your second feature, written in the form of a benefit statement.
+							</div>
+						</div>
+						<div class="item">
+							<div class="circle">3</div>
+							<div class="text">
+								Your third feature, written in the form of a benefit statement.
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="item">
-				<div class="img"></div>
-				<p>Keterangan Produk</p>
-			</div>
-			<div class="item">
-				<div class="img"></div>
-				<p>Keterangan Produk</p>
+
+			<!-- Sidebar -->
+			<div class="sidebar box">
+				<h4>Contact Us</h4>
+				<p>Sales akan menguhungi anda 1x24 jam setelah data kami terima</p>
+
+				<form id="form-contact">
+					<!-- Name -->
+					<label for="name">Your Name</label>
+					<input
+						type="text"
+						class="input-data"
+						placeholder="First and last name"
+					/>
+
+					<!-- Email -->
+					<label for="email">Email</label>
+					<input
+						type="text"
+						class="input-data"
+						placeholder="example@gmail.com"
+					/>
+
+					<!-- Address -->
+					<label for="address">Address</label>
+					<textarea class="input-data" cols="20" rows="5"></textarea>
+
+					<label for="name">What are you interested in ?</label>
+					<select class="input-data">
+						<option value="">Choose</option>
+						<option value="1">Option 1</option>
+						<option value="2">Option 2</option>
+						<option value="3">Option 3</option>
+						<option value="4">Option 4</option>
+					</select>
+
+					<button class="submit" type="button" onclick="buttomSubmit(event);">
+						Submit
+					</button>
+					<button class="reset" type="button" onclick="buttonClear()">
+						Clear
+					</button>
+				</form>
 			</div>
 		</section>
 
-		<script type="text/javascript" src="js/script.js"></script>
+		<script src="js/script.js"></script>
 	</body>
 </html>

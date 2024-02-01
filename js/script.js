@@ -22,3 +22,31 @@ function nextSlide() {
 showSlide(currentSlide)
 
 setInterval(nextSlide, 3000)
+
+function buttomSubmit(e) {
+    const inputElements = document.querySelectorAll('.input-data')
+
+    // Validation input
+    let result = true
+    inputElements.forEach((el, i) => {
+        if (el.value === '') {
+            el.classList.add('error')
+            result = false
+        }
+        else el.classList.remove('error')
+    })
+
+    if (result) {
+        alert('Data berhasil dikirim')
+        buttonClear() // reset form
+    }
+}
+
+function buttonClear() {
+    const inputElements = document.querySelectorAll('.input-data')
+
+    inputElements.forEach(el => {
+        el.value = ''
+        el.classList.remove('error')
+    })
+}
